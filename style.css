@@ -1,0 +1,104 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Mukta", sans-serif;
+}
+/* comienzo header flex */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+.logo{
+display:flex;
+justify-content: space-evenly;
+width: 40%;
+}
+
+.menu{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content:space-evenly;
+  margin: 2%;
+}
+
+nav a {
+  text-decoration:none;
+  color:cadetblue;
+}
+
+
+
+
+/* comienzo grid */
+
+main{
+  display: grid;
+  grid-template-areas: "img1 img2 img3 "
+                        "h h h "
+                        "texto texto texto"
+                        "marcas marcas marcas";
+  grid-template-columns:1fr 1fr 1fr ;
+  grid-template-rows: 4px 4px 4px;
+  justify-items: center;
+  align-items: center;
+}
+.img1{
+  grid-area: img1;
+}
+.img2{
+  grid-area: img2;
+}
+.img3{
+  grid-area: img3;
+}
+.h1{
+  grid-area: h;
+}
+.texto{
+  grid-area: texto;
+}
+
+
+section h1 {
+  background-color: black;
+  color: white;
+}
+
+img {   
+  margin: auto;
+  padding: 30px;
+}
+
+p {
+  background-color: cadetblue;
+}
+
+/* imagen marcas */
+.marcas {
+  grid-area: marcas;
+  background-image: url(./img/marcas1.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* comienzo footer flex */
+footer {
+  background-color: black;
+}
+
+footer a{
+  text-decoration: none;
+  color: cadetblue;
+}
+.menu2{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly ;
+}
+
+
+
