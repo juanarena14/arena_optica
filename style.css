@@ -34,7 +34,7 @@ nav a {
                         "texto texto texto"
                         "marcas marcas marcas";
   grid-template-columns:1fr 1fr 1fr ;
-  grid-template-rows:30% 8% 30% 30%;
+  grid-template-rows:30% 8% 30% 1%;
   justify-items: center;
   align-items: center;
 }
@@ -56,15 +56,17 @@ nav a {
 /* imagen marcas */
 .marcas {
   grid-area: marcas;
-  background-image: url(./img/marcas1.jpg);
-  height: 500px;
+  background-image: url(./img/marcas-anteojos-2.png);
+  height: 200px;
   background-repeat:no-repeat;
   background-position: center;
-  width: 60%;
 }
 h1 {
-  background-color: black;
+  background-color:cadetblue;
   color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 img {   
   margin: auto;
@@ -73,16 +75,113 @@ img {
 p {
   background-color: cadetblue;
 }
-/* comienzo footer flex */
+  
+/* comienzo footer */
 footer {
   background-color: black;
+  padding: 30px;
 }
 footer a{
   text-decoration: none;
   color: cadetblue;
 }
+/* footer flex */
 .menu2{
   display: flex;
   flex-direction:row;
   justify-content:space-evenly ;
+}
+/* comienzo pagina contactenos */
+.contactenos{
+  background-color: cadetblue;
+  color:white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mainContacto{
+    display: grid;
+    grid-template-areas:"h h"
+                        "form img"
+                        "preg preg";
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 5% 70% 25%;
+    margin: 5%;
+
+  }
+  .consultas{
+    grid-area: h;
+    padding: 10px;
+  }
+  .form{
+    grid-area: form;
+    position: center;
+  }
+  .imgForm{
+    grid-area: img;
+  }
+  .preguntas{
+    grid-area: preg;
+    padding: 20px;
+  }
+  input{
+    border-radius: 5px;
+    padding: 3px;
+  }
+  textarea{
+    border-radius: 5px;
+    padding: 3px;
+  }
+  .enviar{
+    background-color: cadetblue;
+    padding: 10px;
+    width: 100px;
+    color: white;
+    text-transform: uppercase;
+}
+/* tablest */
+@media (min-width:481px) and (max-width:1024px){
+  /* imagen marcas */
+  .marcas {
+    grid-area: marcas;
+    background-image: url(./img/marcas1.jpg);
+    height: 500px;
+    background-repeat:no-repeat;
+    background-position: center;
+  }
+  .mainContacto{
+    display: grid;
+    grid-template-areas:"h"
+                        "form"
+                        "preg"
+                        "img";
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 5% 50% 25% 20%;
+    margin: 5%;
+
+  }
+}
+/* smartphone */
+@media (max-width:480){
+  /* imagen marcas */
+  .marcas {
+    grid-area: marcas;
+    background-image: url(./img/marcas1.jpg);
+    height: 500px;
+    background-repeat:no-repeat;
+    background-position: center;
+  }
+  /* contacto */
+  .mainContacto{
+    display: grid;
+    grid-template-areas:"h"
+                        "form"
+                        "preg"
+                        "img";
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 5% 50% 25% 20%;
+    margin: 5%;
+
+  }
+  
 }
