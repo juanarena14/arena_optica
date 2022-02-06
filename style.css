@@ -3,6 +3,7 @@
   padding: 0%;
   font-family: "Mukta", sans-serif;
 }
+
 /* comienzo header flex */
 header {
   display: flex;
@@ -10,200 +11,211 @@ header {
   justify-content: center;
   background-color: black;
 }
-.logo{
-display:flex;
-justify-content: space-evenly;
-width: 40%;
+
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
 }
-.logo2{
+
+.logo2 {
   display: none;
 }
-.menu{
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content:center;
-  align-items: center;
-  margin: 2%;
-}
+
 nav a {
-  text-decoration:none;
-  color:cadetblue;
+  text-decoration: none;
+  color: cadetblue;
 }
+
 /* comienzo grid */
-.mainIndex{
+.mainIndex {
   display: grid;
   grid-template-areas: "img1 img2 img3 "
-                        "h h h "
-                        "texto texto texto"
-                        "marcas marcas marcas";
-  grid-template-columns:1fr 1fr 1fr ;
-  grid-template-rows:30% 8% 30% 1%;
+    "h h h "
+    "texto texto texto"
+    "marcas marcas marcas";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30% 8% 30% 1%;
   justify-items: center;
   align-items: center;
 }
-.img1{
+
+.img1 {
   grid-area: img1;
 }
-.img2{
+
+.img2 {
   grid-area: img2;
 }
-.img3{
+
+.img3 {
   grid-area: img3;
 }
-.h1{
+
+.h1 {
   grid-area: h;
 }
-.texto{
+
+.texto {
   grid-area: texto;
+  background-color: cadetblue;
 }
+
 /* imagen marcas */
 .marcas {
   grid-area: marcas;
   background-image: url(./img/marcas-anteojos-2.png);
   height: 200px;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
 }
+
 h1 {
-  background-color:cadetblue;
+  background-color: cadetblue;
   color: white;
   padding: 20px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-img {   
+
+img {
   margin: auto;
   padding: 30px;
 }
-p {
-  background-color: cadetblue;
-}
-  
+
+
 /* comienzo footer */
 footer {
   background-color: black;
-  padding: 30px;
+  padding: 1px;
 }
-footer a{
-  text-decoration: none;
-  color: cadetblue;
-}
-/* footer flex */
-.menu2{
-  display: flex;
-  flex-direction:row;
-  justify-content:space-evenly ;
-}
+
 /* comienzo pagina contactenos */
-.contactenos{
+.contactenos {
   background-color: cadetblue;
-  color:white;
+  color: white;
   padding: 20px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.mainContacto{
-    display: grid;
-    grid-template-areas:"h h"
-                        "form img"
-                        "preg preg";
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 5% 70% 25%;
-    margin: 5%;
 
-  }
-  .consultas{
-    grid-area: h;
-    padding: 10px;
-  }
-  .form{
-    grid-area: form;
-    position: center;
-  }
-  .imgForm{
-    grid-area: img;
-  }
-  .preguntas{
-    grid-area: preg;
-    padding: 20px;
-  }
-  input{
-    border-radius: 5px;
-    padding: 3px;
-  }
-  textarea{
-    border-radius: 5px;
-    padding: 3px;
-  }
-  .enviar{
-    background-color: cadetblue;
-    padding: 10px;
-    width: 100px;
-    color: white;
-    text-transform: uppercase;
+.mainContacto {
+  display: grid;
+  grid-template-areas: "h h"
+    "form img"
+    "preg preg";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5% 70% 25%;
+  margin: 5%;
+
 }
+
+.consultas {
+  grid-area: h;
+  padding: 10px;
+}
+
+.form {
+  grid-area: form;
+  position: center;
+}
+
+.imgForm {
+  grid-area: img;
+}
+
+.preguntas {
+  grid-area: preg;
+  padding: 20px;
+}
+
+input {
+  border-radius: 5px;
+  padding: 3px;
+}
+
+textarea {
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.enviar {
+  background-color: cadetblue;
+  padding: 10px;
+  width: 100px;
+  color: white;
+  text-transform: uppercase;
+}
+
 /* tablest */
-@media (min-width:481px) and (max-width:1024px){
+@media (min-width:481px) and (max-width:1024px) {
+
   /* imagen marcas */
   .marcas {
     grid-area: marcas;
     background-image: url(./img/marcas1.jpg);
     height: 500px;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
   }
-  .mainContacto{
+
+  .mainContacto {
     display: grid;
-    grid-template-areas:"h"
-                        "form"
-                        "preg"
-                        "img";
-    grid-template-columns:1fr 1fr;
+    grid-template-areas: "h"
+      "form"
+      "preg"
+      "img";
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 5% 50% 25% 20%;
     margin: 5%;
 
   }
-  .logo2{
-    display:flex;
-    justify-content:center;
+
+  .logo2 {
+    display: flex;
+    justify-content: center;
     width: 35%;
-    }
-    .logo{
-      display:none;
-      width: 40%;
-      }
-}
-/* smartphone */
-@media (max-width:480px){
-  /* imagen marcas */
-  .marcas {
-    grid-area: marcas;
-    background-image: url(./img/marcas1.jpg);
-    height: 500px;
-    background-repeat:no-repeat;
-    background-position: center;
   }
-  /* contacto */
-  .mainContacto{
-    display: grid;
-    grid-template-areas:"h"
-                        "form"
-                        "preg"
-                        "img";
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 5% 50% 25% 20%;
-    margin: 5%;
 
-  }
-  .logo{
-    display:none;
+  .logo {
+    display: none;
     width: 40%;
-    }
-
-  .logo2{
-    display:flex;
-    justify-content:center;
-    width: 35%;
-    }
   }
+}
+
+/* smartphone */
+@media (max-width:480px) {
+
+  /* imagen marcas */
+  .marcas {
+    grid-area: marcas;
+    background-image: url(./img/marcas1.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* contacto */
+  .mainContacto {
+    display: grid;
+    grid-template-areas: "h"
+      "form"
+      "preg"
+      "img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5% 50% 25% 20%;
+    margin: 5%;
+
+  }
+
+  .logo {
+    display: none;
+    width: 40%;
+  }
+
+  .logo2 {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+  }
+}
