@@ -71,7 +71,8 @@ nav a {
 }
 
 h1 {
-  background-color: cadetblue;
+  /* gradientes */
+  background-image: linear-gradient(to right, white, cadetblue, cadetblue, cadetblue, white);
   color: white;
   padding: 20px;
   text-align: center;
@@ -91,13 +92,7 @@ footer {
 }
 
 /* comienzo pagina contactenos */
-.contactenos {
-  background-color: cadetblue;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 
 .mainContacto {
   display: grid;
@@ -147,6 +142,35 @@ textarea {
   text-transform: uppercase;
 }
 
+/*comienzo pagina de ubicaciones*/
+.container-fluid {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: cadetblue;
+}
+
+h4 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* comienzo pagina productos */
+h5 {
+  color: cadetblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: lowercase;
+
+}
+
+.col {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 30px;
+}
+
 /* tablest */
 @media (min-width:481px) and (max-width:1024px) {
 
@@ -159,6 +183,7 @@ textarea {
     background-position: center;
   }
 
+  /* pagina de contacto */
   .mainContacto {
     display: grid;
     grid-template-areas: "h"
@@ -195,7 +220,7 @@ textarea {
     background-position: center;
   }
 
-  /* contacto */
+  /* pagina de contacto */
   .mainContacto {
     display: grid;
     grid-template-areas: "h"

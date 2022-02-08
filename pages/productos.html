@@ -21,7 +21,7 @@
             <a href="../index.html"><img src="../img/logo.jpeg" alt="foto" class="logo"></a>
             <a href="./index.html"><img src="../img/Logo2.jpg" alt="foto" class="logo2"></a>
         </div>
-        <!-- inicio navbar BS -->
+        <!-- inicio navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">Inicio</a>
@@ -47,31 +47,58 @@
                 </div>
             </div>
         </nav>
-        <!-- fin de navbar BS -->
+        <!-- fin de navbar -->
     </header>
     <br>
     <h1 class="h1">Productos!</h1>
     <br>
     <!-- comienzo main -->
     <main>
-        <section>
-            <img src="../img/productos1.jpeg" alt="lentes de sol" width="10%">
-            <img src="../img/productos2.jpeg" alt="lentes de sol 2" width="15%">
-            <img src="../img/productos3.jpeg" alt="armazon de receta" width="15%">
-        </section>
-        <hr>
-        <section>
-            <label for="productos">productos:</label>
-            <select name="productos" id="productos">
-                <option value="">productos</option>
-                <option value="">recetados</option>
-                <option value="">de sol</option>
-                <option value="">niños</option>
-                <option value="">mujer</option>
-            </select>
-        </section>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="../img/producto4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Anteojos-Niños</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../img/producto2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Anteojos-Para Sol</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../img/producto3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Anteojos-Recetados</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../img/producto1.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Anteojos-Deportivos</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <hr>
+    <!-- fin de main -->
+
     <!-- comienzo footer -->
     <footer>
         <div class="container">
@@ -109,6 +136,8 @@
             </footer>
         </div>
     </footer>
+    <!-- fin de footer -->
+
     <!-- javascrip de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
