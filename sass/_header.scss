@@ -1,0 +1,48 @@
+/**** comienzo de header ****/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+
+  .logo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: auto;
+    padding: 30px;
+  }
+
+  .logo2 {
+    display: none;
+    margin: auto;
+    padding: 30px;
+  }
+  @media (min-width:481px) and (max-width:1024px) {
+    .logo {
+      display: none;
+      width: 40%;
+    }
+
+    .logo2 {
+      display: flex;
+      justify-content: center;
+      width: 35%;
+    }
+  }
+  @media (max-width:480px) {
+    .logo {
+      display: none;
+      width: 40%;
+    }
+
+    .logo2 {
+      display: flex;
+      justify-content: center;
+      width: 35%;
+    }
+  }
+}
+
+
+/**** fin de header ****/

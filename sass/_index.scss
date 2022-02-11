@@ -1,0 +1,32 @@
+/**** main index ****/
+.marcas {
+    grid-area: marcas;
+    background-image: url(../img/marcas-anteojos-2.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/**** medias queries ****/
+/**** tablets ****/
+@media (min-width:481px) and (max-width:1024px) {
+    .marcas {
+        grid-area: marcas;
+        background-image: url(../img/marcas1.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/**** smartphone ****/
+@media (max-width:480px) {
+    .marcas {
+        grid-area: marcas;
+        background-image: url(../img/marcas1.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+/**** fin main index ****/
