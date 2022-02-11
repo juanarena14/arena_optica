@@ -1,0 +1,159 @@
+/**** estilos generales ****/
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Mukta", sans-serif; }
+
+img {
+  margin: auto;
+  padding: 30px; }
+
+h1 {
+  /* gradientes */
+  background-image: linear-gradient(to right, white, cadetblue, cadetblue, cadetblue, white);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: cadetblue; }
+
+.texto {
+  background-color: cadetblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px; }
+
+/**** comienzo de header ****/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black; }
+  header .logo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: auto;
+    padding: 30px; }
+  header .logo2 {
+    display: none;
+    margin: auto;
+    padding: 30px; }
+  @media (min-width: 481px) and (max-width: 1024px) {
+    header .logo {
+      display: none;
+      width: 40%; }
+    header .logo2 {
+      display: flex;
+      justify-content: center;
+      width: 35%; } }
+  @media (max-width: 480px) {
+    header .logo {
+      display: none;
+      width: 40%; }
+    header .logo2 {
+      display: flex;
+      justify-content: center;
+      width: 35%; } }
+
+/**** fin de header ****/
+/**** main index ****/
+.marcas {
+  grid-area: marcas;
+  background-image: url(../img/marcas-anteojos-2.png);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/**** medias queries ****/
+/**** tablets ****/
+@media (min-width: 481px) and (max-width: 1024px) {
+  .marcas {
+    grid-area: marcas;
+    background-image: url(../img/marcas1.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center; } }
+
+/**** smartphone ****/
+@media (max-width: 480px) {
+  .marcas {
+    grid-area: marcas;
+    background-image: url(../img/marcas1.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center; } }
+
+/**** fin main index ****/
+/**** comienzo pagina contactos ****/
+.mainContacto {
+  display: grid;
+  grid-template-areas: "h h" "form img" "preg preg";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5% 70% 25%;
+  margin: 5%; }
+  .mainContacto .consultas {
+    grid-area: h;
+    padding: 10px; }
+  .mainContacto .imgForm {
+    grid-area: img; }
+  .mainContacto .form {
+    grid-area: form;
+    position: center; }
+  .mainContacto .preguntas {
+    grid-area: preg;
+    padding: 20px; }
+  .mainContacto input {
+    border-radius: 5px;
+    padding: 3px; }
+  .mainContacto textarea {
+    border-radius: 5px;
+    padding: 3px; }
+  .mainContacto .enviar {
+    background-color: cadetblue;
+    padding: 10px;
+    width: 100px;
+    color: white;
+    text-transform: uppercase; }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .mainContacto {
+    display: grid;
+    grid-template-areas: "h" "form" "preg" "img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5% 60% 20% 15%;
+    margin: 5%; } }
+
+@media (max-width: 480px) {
+  .mainContacto {
+    display: grid;
+    grid-template-areas: "h" "form" "preg" "img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5% 60% 20% 15%;
+    margin: 5%; } }
+
+/**** fin pagina contactos ****/
+/**** comienzo pagina productos ****/
+main h5 {
+  color: cadetblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: lowercase; }
+
+main .col {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 30px; }
+
+/**** comienzo pagina ubicaciones ****/
+.container-fluid {
+  padding-left: 100px;
+  padding-right: 100px; }
+  .container-fluid h4 {
+    font-family: 'Times New Roman', Times, serif; }
+
+/**** comienzo footer ****/
+footer {
+  background-color: black;
+  padding: 1px; }

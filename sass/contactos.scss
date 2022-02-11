@@ -1,0 +1,78 @@
+/**** comienzo pagina contactos ****/
+
+.mainContacto {
+    display: grid;
+    grid-template-areas: "h h"
+        "form img"
+        "preg preg";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5% 70% 25%;
+    margin: 5%;
+
+    .consultas {
+        grid-area: h;
+        padding: 10px;
+    }
+
+    .imgForm {
+        grid-area: img;
+    }
+
+    .form {
+        grid-area: form;
+        position: center;
+    }
+
+    .preguntas {
+        grid-area: preg;
+        padding: 20px;
+    }
+
+    input {
+        border-radius: 5px;
+        padding: 3px;
+    }
+
+    textarea {
+        border-radius: 5px;
+        padding: 3px;
+    }
+
+    .enviar {
+        background-color: cadetblue;
+        padding: 10px;
+        width: 100px;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width:481px) and (max-width:1024px) {
+    .mainContacto {
+        display: grid;
+        grid-template-areas: "h"
+            "form"
+            "preg"
+            "img";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5% 60% 20% 15%;
+        margin: 5%;
+
+    }
+}
+
+@media (max-width:480px) {
+    .mainContacto {
+        display: grid;
+        grid-template-areas: "h"
+            "form"
+            "preg"
+            "img";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5% 60% 20% 15%;
+        margin: 5%;
+
+    }
+}
+
+/**** fin pagina contactos ****/
