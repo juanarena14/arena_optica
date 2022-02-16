@@ -31,7 +31,7 @@ h3 {
 }
 
 
-@import "variables"
+
 @import "header";
 @import "index";
 @import "contactos";
@@ -42,6 +42,6 @@ h3 {
 
 /**** comienzo footer ****/
 footer {
-    background-color: $negro;
+    background-color: black;
     padding: 1px;
 }
