@@ -1,47 +1,10 @@
-/**** estilos generales ****/
-* {
-    margin: 0%;
-    padding: 0%;
-    font-family: "Mukta", sans-serif;
-}
-
-img {
-    margin: auto;
-    padding: 30px;
-}
-
-h1 {
-    /* gradientes */
-    background-image: linear-gradient(to right, white, cadetblue, cadetblue, cadetblue, white);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: cadetblue;
-}
-
-.texto {
-    background-color: cadetblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 30px;
-}
-
-
-
+@import "variables";
+@import "estilos-generales";
+@import "extend";
+@import "mixin";
 @import "header";
 @import "index";
 @import "contactos";
 @import "productos";
 @import "ubicaciones";
-
-
-
-/**** comienzo footer ****/
-footer {
-    background-color: black;
-    padding: 1px;
-}
+@import "footer";   

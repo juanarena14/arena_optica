@@ -1,0 +1,4 @@
+@mixin logo ($display,$ancho){
+    display: $display;
+    width: $ancho;
+}

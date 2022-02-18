@@ -8,7 +8,7 @@ img {
   margin: auto;
   padding: 30px; }
 
-h1 {
+.h1, .index-h1 {
   /* gradientes */
   background-image: linear-gradient(to right, white, cadetblue, cadetblue, cadetblue, white);
   color: white;
@@ -21,9 +21,17 @@ h3 {
   color: cadetblue; }
 
 .texto {
-  background-color: cadetblue;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 30px; }
+  padding-left: 40px;
+  padding-right: 40px; }
+
+h6 {
+  background-color: cadetblue;
+  padding: 60px; }
+
+/**** extend ****/
+.index-h1 {
+  color: black; }
 
 /**** comienzo de header ****/
 header {
@@ -33,12 +41,13 @@ header {
   background-color: black; }
   header .logo {
     display: flex;
-    justify-content: space-evenly;
     width: 40%;
+    justify-content: space-evenly;
     margin: auto;
     padding: 30px; }
   header .logo2 {
     display: none;
+    width: 100%;
     margin: auto;
     padding: 30px; }
   @media (min-width: 481px) and (max-width: 1024px) {
@@ -47,16 +56,16 @@ header {
       width: 40%; }
     header .logo2 {
       display: flex;
-      justify-content: center;
-      width: 35%; } }
+      width: 35%;
+      justify-content: center; } }
   @media (max-width: 480px) {
     header .logo {
       display: none;
       width: 40%; }
     header .logo2 {
       display: flex;
-      justify-content: center;
-      width: 35%; } }
+      width: 35%;
+      justify-content: center; } }
 
 /**** fin de header ****/
 /**** main index ****/
@@ -157,3 +166,11 @@ main .col {
 footer {
   background-color: black;
   padding: 1px; }
+  footer .ws-green :hover {
+    color: #1bc41b; }
+  footer .instagramColor :hover {
+    color: #ff2600; }
+  footer .facebookColor :hover {
+    color: #2f2ff0; }
+  footer li {
+    padding-right: 10px; }
