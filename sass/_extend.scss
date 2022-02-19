@@ -1,0 +1,5 @@
+/**** extend ****/
+.index-h1 {
+    @extend .h1;
+    color:$negro;
+}

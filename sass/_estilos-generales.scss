@@ -1,0 +1,36 @@
+/**** estilos generales ****/
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Mukta", sans-serif;
+}
+
+img {
+    margin: auto;
+    padding: 30px;
+}
+
+.h1 {
+    /* gradientes */
+    background-image: linear-gradient(to right, $blanco, $celeste, $celeste, $celeste, $blanco);
+    color: $blanco;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: $celeste;
+}
+
+.texto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: $negro;
+}
+h6{
+    background-image: linear-gradient(to right, $blanco,$celeste, $celeste, $celeste, $celeste, $blanco);
+    padding: 80px;
+}

@@ -3,43 +3,39 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: black;
+  background-color: $negro;
 
   .logo {
-    display: flex;
+    @include logo (flex, 40%);
     justify-content: space-evenly;
-    width: 40%;
+
     margin: auto;
     padding: 30px;
   }
 
   .logo2 {
-    display: none;
+    @include logo (none, 100%);
     margin: auto;
     padding: 30px;
   }
   @media (min-width:481px) and (max-width:1024px) {
     .logo {
-      display: none;
-      width: 40%;
+      @include logo (none, 40%);
     }
 
     .logo2 {
-      display: flex;
+      @include logo (flex, 35%);
       justify-content: center;
-      width: 35%;
     }
   }
   @media (max-width:480px) {
     .logo {
-      display: none;
-      width: 40%;
+      @include logo (none, 40%);
     }
 
     .logo2 {
-      display: flex;
+      @include logo (flex, 35%);
       justify-content: center;
-      width: 35%;
     }
   }
 }

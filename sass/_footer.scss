@@ -1,0 +1,18 @@
+/**** comienzo footer ****/
+footer {
+    background-color: $negro;
+    padding: 1px;
+
+    .ws-green :hover{
+        color: rgb(27, 196, 27);
+    }
+    .instagramColor :hover{
+        color:rgb(255, 38, 0);
+    }
+    .facebookColor :hover{
+        color: rgb(47, 47, 240);
+    }
+    li{
+        padding-right: 10px;
+    }
+}
