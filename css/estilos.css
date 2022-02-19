@@ -23,11 +23,12 @@ h3 {
 .texto {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 40px;
-  padding-right: 40px; }
+  padding-right: 40px;
+  color: black; }
 
 h6 {
-  background-color: cadetblue;
-  padding: 60px; }
+  background-image: linear-gradient(to right, white, cadetblue, cadetblue, cadetblue, cadetblue, white);
+  padding: 80px; }
 
 /**** extend ****/
 .index-h1 {

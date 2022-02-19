@@ -1,0 +1,3 @@
+-optimice todas las imagenes para que pesen menos
+-agregue keywords y description en todas las paginas con la meta etiqueta
+-agregue tambien descripciones a las imagenes en las etiquetas alt 
